@@ -39,7 +39,7 @@ How to install
 
 Usage
 -----
-* The Keyword universal executes a command on every possible shell before next command execution
+* The Keyword universal executes a command on every possible shell before next command execution:
 
 	universal export STR="Hello World!"
 	universal STR="Hello World!"
