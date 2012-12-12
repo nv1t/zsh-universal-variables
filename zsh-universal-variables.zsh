@@ -6,7 +6,7 @@ function universal() {
 
 function _omz_universalvariables_preexec() {
 	. /tmp/zsh.$(whoami)/${PID} 2> /dev/null
-	echo "" > /tmp/zsh.$(whoami)/${PID}
+	echo "" >| /tmp/zsh.$(whoami)/${PID}
 }
 
 function _omz_universalvariables_cleanupPTS() {
@@ -25,7 +25,7 @@ PTS="pts.${$(tty)##*/}"
 PID="pid.$$"
 
 mkdir -p /tmp/zsh.$(whoami)
-echo "" > /tmp/zsh.$(whoami)/${PID}
+echo "" >| /tmp/zsh.$(whoami)/${PID}
 chmod 700 -R /tmp/zsh.$(whoami)
 
 autoload -U add-zsh-hook
