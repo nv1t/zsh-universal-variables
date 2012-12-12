@@ -1,6 +1,7 @@
 zsh-universal-variables
 =======================
 **[Fish shell](http://www.fishshell.com) like universal variables for [Zsh](http://www.zsh.org).**
+Universal Variables are set throughout the shells. They are a type of global Variables. The major difference to fish is: they are not persistent and won't last over a session of open terminals. Therefore, the universal variables won't be set for new terminals.
 
 How to install
 --------------
