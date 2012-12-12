@@ -41,7 +41,7 @@ Usage
 -----
 * The Keyword universal executes a command on every possible shell before next command execution:
 
-	universal export STR="Hello World!"
-	universal STR="Hello World!"
+        universal export STR="Hello World!"
+        universal STR="Hello World!"
 
 * The Environment variables won't get saved, it's just active for the session
