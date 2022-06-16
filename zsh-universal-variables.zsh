@@ -29,7 +29,7 @@ PID="pid.$$"
 # and sets only permissions on the user
 mkdir -p /tmp/zsh.$(whoami)
 echo "" >| /tmp/zsh.$(whoami)/${PTS}
-chmod 700 -R /tmp/zsh.$(whoami)
+chmod -R 700 /tmp/zsh.$(whoami)
 
 autoload -U add-zsh-hook
 add-zsh-hook preexec _omz_universalvariables_preexec
